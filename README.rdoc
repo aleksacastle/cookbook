@@ -1,0 +1,13 @@
+## Synopsis
+Grandma wants to store all of her family recipes, but keeps losing her old recipe book. We're brinding grandma into the digital age by building her a web app where she can keep her recipes on the web!
+
+
+### Grandma Requirements:
+
+ [ 1 ] Grandma can add new recipes through browser
+
+ [ 2 ] Grandma can edit an existing recipe through browser
+
+ [ 3 ] Grandma can remove an existing recipe through browser
+
+ [ 4 ] Provide an endpoint to list all saved recipes in JSON format
