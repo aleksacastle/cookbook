@@ -1,3 +1,73 @@
-// Place all the styles related to the recipes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.Cookbook {
+  text-align: center;
+  border: 1px solid white;
+  width: 80vw;
+  height: auto;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.5);
+  background: #f6f6f6;
+  padding-bottom: 60px;
+  margin: 40px auto;
+}
+
+.Cookbook-Header {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 70px auto 30px;
+}
+
+.Recipes-Container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+input {
+  width: 40%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px auto;
+  box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.Recipes-List {
+  width: 50vw;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 1px lightgrey;
+  margin: auto;
+}
+
+.Recipe-Title {
+  width: 60%;
+  padding: 12px;
+  margin-right: 10px;
+}
+
+.Recipe-Button {
+  width: 30vw;
+  padding: 5px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #3d99ff;
+  margin-right: 5px;
+}
+
+.Recipe-Body {
+  height: 30vh;
+  width: 40%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px auto;
+  box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.3);
+}
+textarea {
+  height: 30vh;
+  width: 40%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px auto;
+  box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  resize: vertical;
+}

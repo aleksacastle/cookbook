@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong><%= @recipe.title %></strong>
-</p>
+<h1><%= @recipe.title %></h1>
 
-<div>
-  <%= @recipe.body %>
+<div class="Recipe-Body">
+	<%= @recipe.body %>
 </div>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |

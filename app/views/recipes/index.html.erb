@@ -1,26 +1,16 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Recipes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <td colspan="3"></td>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td><%= recipe.title %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="Recipes-List">
+	<table>
+		<% @recipes.each do |recipe| %>
+			<tr>
+				<td class="Recipe-Title"><%= link_to recipe.title, recipe_path(recipe) %></td>
+				<td class="Recipe-Button"><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+				<td class="Recipe-Button"><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
 
 <br>
 
-<%= link_to 'New Recipe', new_recipe_path %>
+<%= button_to "Add recipe", new_recipe_path, method: :get %>
