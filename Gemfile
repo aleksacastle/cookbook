@@ -24,7 +24,7 @@ gem 'turbolinks', "~> 5"
 gem 'jbuilder', '~> 2.5'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'pry'
 gem "active_model_serializers"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,7 +38,9 @@ gem "active_model_serializers"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  gem "factory_bot"
+  gem 'factory_bot_rails'
 end
 
 group :development do

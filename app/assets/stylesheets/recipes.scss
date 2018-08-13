@@ -55,12 +55,13 @@ input {
 }
 
 .Recipe-Body {
-  height: 30vh;
+  //height: 30vh;
   width: 40%;
   padding: 10px;
   font-size: 1em;
   margin: 10px auto;
   box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  resize: vertical;
 }
 textarea {
   height: 30vh;
